@@ -7,24 +7,38 @@
     body {
       font-family: 'Merriweather', serif;
       text-align: center;
-      background: #f9f9f9;
+      background: url('marble-bg.jpg') center/cover no-repeat fixed;
       color: #333;
       padding: 20px;
+      min-height: 100vh;
     }
     h1 { 
       color: #d4af37; /* Gold */
       font-size: 2.5rem;
     }
-    img {
-      width: 200px;
-      border-radius: 10px;
+    nav {
       margin: 20px 0;
+    }
+    nav a {
+      color: #d4af37;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 1.8rem; }
+      nav a { display: block; margin: 10px 0; }
     }
   </style>
 </head>
 <body>
-  <h1>✨ Ingle Jewelry Co. ✨</h1>
+  <h1>Ingle Jewelry Co.</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="mens-gold.html">Men's Gold</a>
+    <a href="womens-gold.html">Women's Gold</a>
+    <a href="mens-sterling.html">Men's Sterling</a>
+    <a href="womens-sterling.html">Women's Sterling</a>
+  </nav>
   <p>Luxury resale jewelry coming soon!</p>
-  <img src="https://via.placeholder.com/200" alt="Jewelry placeholder">
 </body>
 </html>
